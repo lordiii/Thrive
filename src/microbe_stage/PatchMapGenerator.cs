@@ -108,7 +108,7 @@ public static class PatchMapGenerator
                 [0] = 0,
                 [1] = 200,
             },
-            ScreenCoordinates = new Vector2(70, 160),
+            ScreenCoordinates = new Vector2(200, 30),
         };
         map.AddPatch(estuary);
 
@@ -132,7 +132,7 @@ public static class PatchMapGenerator
                 [0] = 0,
                 [1] = 200,
             },
-            ScreenCoordinates = new Vector2(200, 30),
+            ScreenCoordinates = new Vector2(300, 100),
         };
         map.AddPatch(iceShelf);
 
@@ -158,6 +158,7 @@ public static class PatchMapGenerator
         LinkPatches(bathypelagic, mesopelagic);
         LinkPatches(mesopelagic, epipelagic);
         LinkPatches(mesopelagic, cave);
+        LinkPatches(mesopelagic, iceShelf);
         LinkPatches(epipelagic, estuary);
         LinkPatches(epipelagic, iceShelf);
         LinkPatches(epipelagic, coast);
