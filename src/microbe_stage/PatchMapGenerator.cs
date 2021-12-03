@@ -60,7 +60,7 @@ public static class PatchMapGenerator
                 [0] = 0,
                 [1] = 10,
             },
-            ScreenCoordinates = new Vector2(0, 100),
+            ScreenCoordinates = new Vector2(100, 30),
         };
         map.AddPatch(tidepool);
 
@@ -120,7 +120,7 @@ public static class PatchMapGenerator
                 [0] = 200,
                 [1] = 1000,
             },
-            ScreenCoordinates = new Vector2(300, 200),
+            ScreenCoordinates = new Vector2(100, 200),
         };
         map.AddPatch(cave);
 
