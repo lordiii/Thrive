@@ -60,7 +60,7 @@ public static class PatchMapGenerator
                 [0] = 0,
                 [1] = 10,
             },
-            ScreenCoordinates = new Vector2(300, 100),
+            ScreenCoordinates = new Vector2(0, 100),
         };
         map.AddPatch(tidepool);
 
@@ -150,16 +150,18 @@ public static class PatchMapGenerator
 
         // Connections
         LinkPatches(vents, seafloor);
+        LinkPatches(vents, cave);
+        LinkPatches(vents, bathypelagic);
         LinkPatches(seafloor, bathypelagic);
         LinkPatches(seafloor, abyssopelagic);
         LinkPatches(bathypelagic, abyssopelagic);
         LinkPatches(bathypelagic, mesopelagic);
         LinkPatches(mesopelagic, epipelagic);
         LinkPatches(mesopelagic, cave);
-        LinkPatches(epipelagic, tidepool);
+        LinkPatches(epipelagic, estuary);
         LinkPatches(epipelagic, iceShelf);
         LinkPatches(epipelagic, coast);
-        LinkPatches(coast, estuary);
+        LinkPatches(coast, tidepool);
 
         map.CurrentPatch = vents;
         return map;
